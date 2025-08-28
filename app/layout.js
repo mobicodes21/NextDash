@@ -4,8 +4,11 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
-  title: "Dashboard",
+  title: "NextDash",
   description: "Admin Panel",
+    icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
