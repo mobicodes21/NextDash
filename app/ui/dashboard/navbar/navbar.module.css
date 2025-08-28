@@ -1,0 +1,39 @@
+.container{
+    padding: 20px;
+    background-color: var(--bgSoft);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title{
+    color: var(--textSoft);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+    .title{
+        display: block;
+    }
+}
