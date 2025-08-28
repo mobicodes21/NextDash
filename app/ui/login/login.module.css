@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form {
+  background-color: var(--bgSoft);
+  padding: 50px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  min-width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #2e374a;
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form button {
+  width: 100%;
+  padding: 15px;
+  background-color: teal;
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form span {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.form span a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* mobile*/
+@media (max-width: 600px) {
+  .form {
+    padding: 30px;
+    gap: 15px;
+  }
+
+  .form input,
+  .form button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .form {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .form input,
+  .form button {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1440px) {
+  .form {
+    width: 600px;
+    padding: 60px;
+  }
+}
